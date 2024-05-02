@@ -1,6 +1,6 @@
 {
   "name": "ngx-aur-mat-dialog",
-  "version": "0.1",
+  "version": "17.0.0",
   "peerDependencies": {
     "@angular/animations": "^17.3.3",
     "@angular/common": "^17.3.3",
