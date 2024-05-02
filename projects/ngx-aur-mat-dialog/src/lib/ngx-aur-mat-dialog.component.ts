@@ -1,6 +1,5 @@
 import {ChangeDetectionStrategy, Component, ContentChild, Input, OnInit} from '@angular/core';
 import {NgxAurDialogContentDirective} from "./ngx-aur-dialog-content.directive";
-import {NgxAurDialogScrollableContentDirective} from "./ngx-aur-dialog-scrollable-content.directive";
 
 @Component({
   selector: 'ngx-aur-mat-dialog',
@@ -19,7 +18,6 @@ export class NgxAurMatDialogComponent implements OnInit {
   @Input() showSpinner = true;
 
   @ContentChild(NgxAurDialogContentDirective) dialogActions: NgxAurDialogContentDirective | undefined;
-  @ContentChild(NgxAurDialogScrollableContentDirective) scrollableContent: NgxAurDialogScrollableContentDirective | undefined;
 
   constructor() {
   }
