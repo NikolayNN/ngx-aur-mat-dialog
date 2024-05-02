@@ -1,0 +1,31 @@
+<div class="fixActionRow">
+  <button mat-icon-button
+          class="close-button {{closeIconClass}}"
+          [matTooltip]="closeTooltip"
+          [matTooltipShowDelay]="closeTooltipShowDelay"
+          [tabIndex]="-1"
+          mat-dialog-close>
+    <mat-icon>{{ closeIcon }}</mat-icon>
+  </button>
+
+  @if (showSpinner) {
+    <mat-icon class="spinner">
+      <mat-spinner diameter="20" color="accent"></mat-spinner>
+    </mat-icon>
+  }
+
+  <h2 mat-dialog-title class="title">{{ title }}</h2>
+
+  <mat-dialog-content class="mat-typography">
+    <ng-content select="[ngxAurDialogContent]"></ng-content>
+  </mat-dialog-content>
+
+  <div class="spacer"></div>
+
+
+  @if (dialogActions) {
+    <mat-dialog-actions align="center">
+      <ng-content select="[ngxAurDialogActions]"></ng-content>
+    </mat-dialog-actions>
+  }
+</div>
