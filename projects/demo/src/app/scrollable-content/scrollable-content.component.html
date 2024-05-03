@@ -1,5 +1,6 @@
-<ngx-aur-mat-dialog [title]="'Scrollable dialog'">
-  <ng-container ngxAurDialogContent>
+<app-dialog [title]="'Scrollable dialog'">
+
+  <ng-container appDialogContent>
     <h1> Sticky header </h1>
     <div class="scrollable-content">
       <p>Learn one way to build applications with Angular and reuse your code and abilities to build
@@ -62,9 +63,10 @@
     <h1> Sticky Footer </h1>
   </ng-container>
 
-  <ng-container ngxAurDialogActions>
+  <ng-container appDialogActions>
     <button mat-button mat-dialog-close>Cancel</button>
     <button mat-button mat-dialog-close>Install</button>
   </ng-container>
 
-</ngx-aur-mat-dialog>
+</app-dialog>
+

@@ -22,10 +22,10 @@
 
   <div class="spacer"></div>
 
-
   @if (dialogActions) {
-    <mat-dialog-actions align="center">
+    <mat-dialog-actions [align]="alignActions">
       <ng-content select="[ngxAurDialogActions]"></ng-content>
     </mat-dialog-actions>
   }
+
 </div>

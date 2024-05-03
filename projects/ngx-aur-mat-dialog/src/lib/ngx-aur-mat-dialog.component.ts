@@ -1,5 +1,16 @@
-import {ChangeDetectionStrategy, Component, ContentChild, Input, OnInit} from '@angular/core';
+import {
+  AfterContentInit,
+  AfterViewChecked,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  ContentChild,
+  Input,
+  OnChanges,
+  OnInit, SimpleChanges
+} from '@angular/core';
 import {NgxAurDialogContentDirective} from "./ngx-aur-dialog-content.directive";
+import {NgxAurDialogActionsDirective} from "./ngx-aur-dialog-actions.directive";
 
 @Component({
   selector: 'ngx-aur-mat-dialog',
@@ -7,7 +18,7 @@ import {NgxAurDialogContentDirective} from "./ngx-aur-dialog-content.directive";
   styleUrls: ['./ngx-aur-mat-dialog.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NgxAurMatDialogComponent implements OnInit {
+export class NgxAurMatDialogComponent {
 
   @Input() title = 'Example Title'
   @Input() closeIcon = 'close';
@@ -15,14 +26,9 @@ export class NgxAurMatDialogComponent implements OnInit {
   @Input() closeTooltip = '';
   @Input() closeTooltipShowDelay = 500;
 
-  @Input() showSpinner = true;
+  @Input() showSpinner = false;
 
-  @ContentChild(NgxAurDialogContentDirective) dialogActions: NgxAurDialogContentDirective | undefined;
+  @Input() alignActions: 'start' | 'center' | 'end' = 'center'
 
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
+  @ContentChild(NgxAurDialogActionsDirective) dialogActions: NgxAurDialogActionsDirective | undefined;
 }
