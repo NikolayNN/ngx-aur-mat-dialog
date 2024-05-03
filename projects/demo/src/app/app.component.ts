@@ -10,7 +10,8 @@ import {BottomSpaceComponent} from "./bottom-space/bottom-space.component";
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+  }
 
   openScrollableDialog() {
     this.dialog.open(ScrollableDialogComponent);
@@ -24,7 +25,13 @@ export class AppComponent {
     this.dialog.open(BottomSpaceComponent, {
       height: '600px'
     });
+  }
 
-
+  openNarrowDialog() {
+    this.dialog.open(BottomSpaceComponent, {
+      height: '600px',
+      minHeight: '600px',
+      width: '300px'
+    });
   }
 }

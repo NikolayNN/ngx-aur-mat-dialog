@@ -11,14 +11,16 @@
   z-index: 99999;
 }
 
+.title {
+  padding: 0;
+  margin-left: 36px;
+  margin-right: 44px;
+}
+
 .spinner {
   position: absolute;
   top: 22px;
-  right: 44px;
-}
-
-mat-dialog-content {
-  flex-grow: 1;
+  left: 8px;
 }
 
 .fixActionRow {

@@ -26,7 +26,7 @@ export class NgxAurMatDialogComponent {
   @Input() closeTooltip = '';
   @Input() closeTooltipShowDelay = 500;
 
-  @Input() showSpinner = false;
+  @Input() showSpinner = true;
 
   @Input() alignActions: 'start' | 'center' | 'end' = 'center'
 
