@@ -41,7 +41,7 @@ export class AppComponent {
 
   openStepperDialog() {
     this.dialog.open(StepperDialogComponent, {
-      height: '600px',
+      height: '60vh',
       width: '600px'
     });
   }

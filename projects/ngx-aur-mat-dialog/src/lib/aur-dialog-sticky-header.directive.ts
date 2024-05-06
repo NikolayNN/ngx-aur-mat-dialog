@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[aurDialogScrollableStickyHeader]',
+  selector: '[aurDialogStickyHeader]',
   standalone: true
 })
 export class AurDialogStickyHeaderDirective {

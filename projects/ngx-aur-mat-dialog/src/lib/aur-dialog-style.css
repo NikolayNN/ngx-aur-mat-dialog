@@ -1,0 +1,11 @@
+.aur-dialog-content .mat-horizontal-stepper-wrapper {
+  height: 100% !important;
+}
+
+.aur-dialog-content .mat-horizontal-content-container {
+  overflow: auto !important;
+}
+
+.aur-dialog-content .mat-stepper-horizontal {
+  height: 100%;
+}

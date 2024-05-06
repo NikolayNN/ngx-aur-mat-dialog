@@ -15,10 +15,10 @@
 
 <h2 mat-dialog-title class="title">{{ title }}</h2>
 
-<mat-dialog-content class="mat-typography flex-container">
+<mat-dialog-content class="aur-dialog-content mat-typography">
 
   @if (stickyHeader) {
-    <ng-content select="[aurDialogScrollableStickyHeader]">
+    <ng-content select="[aurDialogStickyHeader]">
     </ng-content>
   }
 
@@ -28,7 +28,7 @@
   </div>
 
   @if (stickyFooter) {
-    <ng-content select="[aurDialogScrollableStickyFooter]">
+    <ng-content select="[aurDialogStickyFooter]">
     </ng-content>
   }
 

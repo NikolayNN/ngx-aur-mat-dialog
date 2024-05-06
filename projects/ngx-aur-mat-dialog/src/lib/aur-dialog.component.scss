@@ -4,12 +4,6 @@
   flex-direction: column;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .close-button {
   position: absolute;
   top: 8px;
@@ -27,6 +21,12 @@
   position: absolute;
   top: 22px;
   left: 8px;
+}
+
+.aur-dialog-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 mat-dialog-content {
