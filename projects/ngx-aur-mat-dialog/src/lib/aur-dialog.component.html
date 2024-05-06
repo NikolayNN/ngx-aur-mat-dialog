@@ -17,26 +17,22 @@
 
 <mat-dialog-content class="aur-dialog-content mat-typography">
 
-  @if (stickyHeader) {
-    <ng-content select="[aurDialogStickyHeader]">
-    </ng-content>
-  }
+  <ng-content select="[aurDialogStickyHeader]">
+  </ng-content>
 
   <div class="scrollable-content">
     <ng-content select="[aurDialogContent]">
     </ng-content>
   </div>
 
-  @if (stickyFooter) {
-    <ng-content select="[aurDialogStickyFooter]">
-    </ng-content>
-  }
+  <ng-content select="[aurDialogStickyFooter]">
+  </ng-content>
 
 </mat-dialog-content>
 
-@if (dialogActions) {
-  <mat-dialog-actions [align]="alignActions">
-    <ng-content select="[aurDialogActions]"></ng-content>
-  </mat-dialog-actions>
-}
+
+<mat-dialog-actions *ngIf="showActions" [align]="alignActions">
+  <ng-content select="[aurDialogActions]"></ng-content>
+</mat-dialog-actions>
+
 

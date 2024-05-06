@@ -12,5 +12,6 @@ export class AurDialogBaseComponent {
 
   @Input() showSpinner = false;
 
+  @Input() showActions = true;
   @Input() alignActions: 'start' | 'center' | 'end' = 'center'
 }

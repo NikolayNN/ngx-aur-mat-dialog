@@ -1,10 +1,10 @@
 import {
   AfterContentInit,
-  AfterViewChecked,
+  AfterViewChecked, AfterViewInit,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
-  ContentChild,
+  ContentChild, ElementRef,
   Input,
   OnChanges,
   OnInit, SimpleChanges
@@ -27,11 +27,6 @@ import {
   styleUrls: ['./aur-dialog.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AurDialogComponent extends AurDialogBaseComponent{
+export class AurDialogComponent extends AurDialogBaseComponent {
 
-  @ContentChild(AurDialogActionsDirective) dialogActions: AurDialogActionsDirective | undefined;
-
-  @ContentChild(AurDialogStickyHeaderDirective) stickyHeader: AurDialogStickyHeaderDirective | undefined;
-
-  @ContentChild(AurDialogStickyFooterDirective) stickyFooter: AurDialogStickyFooterDirective | undefined;
 }
