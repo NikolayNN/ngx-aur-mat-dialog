@@ -20,8 +20,7 @@ export class AppComponent {
 
   openScrollableContentDialog() {
     this.dialog.open(ScrollableContentComponent, {
-      height: '600px',
-      width: '450px'
+
     });
   }
 
