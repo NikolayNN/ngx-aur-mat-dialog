@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {NgxAurMatDialogModule} from "ngx-aur-mat-dialog";
+import {AurDialogModule} from "ngx-aur-mat-dialog";
 import {MatButton} from "@angular/material/button";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
@@ -12,7 +12,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   imports: [
     BrowserModule,
-    NgxAurMatDialogModule,
+    AurDialogModule,
     MatButton
   ],
   providers: [

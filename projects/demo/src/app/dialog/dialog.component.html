@@ -1,13 +1,13 @@
-<ngx-aur-mat-dialog [title]="title"
+<aur-dialog [title]="title"
                     [showSpinner]="showDialogActions"
                     [closeIcon]="closeIcon"
                     [closeTooltip]="closeTooltip"
                     [closeTooltipShowDelay]="closeTooltipShowDelay">
-  <ng-container ngxAurDialogContent>
+  <ng-container aurDialogContent>
     <ng-content select="[appDialogContent]"></ng-content>
   </ng-container>
 
   <ng-container ngxAurDialogActions>
     <ng-content select="[appDialogActions]"></ng-content>
   </ng-container>
-</ngx-aur-mat-dialog>
+</aur-dialog>

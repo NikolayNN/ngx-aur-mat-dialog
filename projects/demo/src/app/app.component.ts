@@ -3,6 +3,7 @@ import {MatDialog} from "@angular/material/dialog";
 import {ScrollableDialogComponent} from "./scrollable-dialog/scrollable-dialog.component";
 import {ScrollableContentComponent} from "./scrollable-content/scrollable-content.component";
 import {BottomSpaceComponent} from "./bottom-space/bottom-space.component";
+import {StepperDialogComponent} from "./stepper-dialog/stepper-dialog.component";
 
 @Component({
   selector: 'app-root',
@@ -18,20 +19,30 @@ export class AppComponent {
   }
 
   openScrollableContentDialog() {
-    this.dialog.open(ScrollableContentComponent);
+    this.dialog.open(ScrollableContentComponent, {
+      height: '600px',
+      width: '450px'
+    });
   }
 
   openBottomSpaceDialog() {
     this.dialog.open(BottomSpaceComponent, {
-      height: '600px'
+      height: '600px',
+      width: '600px'
     });
   }
 
   openNarrowDialog() {
     this.dialog.open(BottomSpaceComponent, {
       height: '600px',
-      minHeight: '600px',
       width: '300px'
+    });
+  }
+
+  openStepperDialog() {
+    this.dialog.open(StepperDialogComponent, {
+      height: '600px',
+      width: '600px'
     });
   }
 }

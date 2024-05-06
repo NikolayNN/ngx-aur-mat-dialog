@@ -1,10 +1,10 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[ngxAurDialogActions]',
+  selector: '[aurDialogActions]',
   standalone: true
 })
-export class NgxAurDialogActionsDirective {
+export class AurDialogActionsDirective {
 
   constructor() { }
 

@@ -1,12 +1,12 @@
 import {Component, Input} from '@angular/core';
-import {NgxAurDialogActionsDirective, NgxAurMatDialogModule} from "ngx-aur-mat-dialog";
+import {AurDialogActionsDirective, AurDialogModule} from "ngx-aur-mat-dialog";
 
 @Component({
   selector: 'app-dialog',
   standalone: true,
   imports: [
-    NgxAurMatDialogModule,
-    NgxAurDialogActionsDirective
+    AurDialogModule,
+    AurDialogActionsDirective
   ],
   templateUrl: './dialog.component.html',
   styleUrl: './dialog.component.scss'

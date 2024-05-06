@@ -1,0 +1,8 @@
+.stepper-dialog-content {
+  height: calc(100% - 64px); /* Вычитаем высоту заголовка и действий, если они есть */
+}
+
+.scrollable-content {
+  max-height: 150px; /* или другая высота, в зависимости от дизайна интерфейса */
+  overflow-y: auto;
+}

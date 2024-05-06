@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {MatButton} from "@angular/material/button";
 import {MatDialogClose} from "@angular/material/dialog";
-import {NgxAurDialogActionsDirective, NgxAurDialogContentDirective, NgxAurMatDialogModule} from "ngx-aur-mat-dialog";
+import {AurDialogActionsDirective, AurDialogContentDirective, AurDialogModule} from "ngx-aur-mat-dialog";
 
 @Component({
   selector: 'app-bottom-space',
@@ -9,9 +9,9 @@ import {NgxAurDialogActionsDirective, NgxAurDialogContentDirective, NgxAurMatDia
     imports: [
         MatButton,
         MatDialogClose,
-        NgxAurDialogActionsDirective,
-        NgxAurDialogContentDirective,
-        NgxAurMatDialogModule
+        AurDialogActionsDirective,
+        AurDialogContentDirective,
+        AurDialogModule
     ],
   templateUrl: './bottom-space.component.html',
   styleUrl: './bottom-space.component.scss'

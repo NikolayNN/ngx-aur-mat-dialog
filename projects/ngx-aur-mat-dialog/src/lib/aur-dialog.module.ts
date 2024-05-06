@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
-import { NgxAurMatDialogComponent } from './ngx-aur-mat-dialog.component';
+import { AurDialogComponent } from './aur-dialog.component';
 import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from "@angular/material/dialog";
 import {MatButton, MatButtonModule} from "@angular/material/button";
 import {MatTooltip} from "@angular/material/tooltip";
 import {MatIcon} from "@angular/material/icon";
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
 import {NgIf} from "@angular/common";
+import {AurDialogBaseComponent} from "./scrollable/base/ngx-aur-mat-dialog-base/aur-dialog-base.component";
+import {AurDialogContentDirective} from "./aur-dialog-content.directive";
+import {AurDialogActionsDirective} from "./aur-dialog-actions.directive";
 
 
 
 @NgModule({
   declarations: [
-    NgxAurMatDialogComponent
+    AurDialogBaseComponent,
+    AurDialogComponent,
   ],
   imports: [
     MatDialogModule,
@@ -19,10 +23,12 @@ import {NgIf} from "@angular/common";
     MatTooltip,
     MatIcon,
     MatProgressSpinner,
-    NgIf
+    NgIf,
+    AurDialogContentDirective,
+    AurDialogActionsDirective
   ],
   exports: [
-    NgxAurMatDialogComponent
+    AurDialogComponent,
   ],
   providers: [
     {
@@ -31,4 +37,4 @@ import {NgIf} from "@angular/common";
     }
   ]
 })
-export class NgxAurMatDialogModule { }
+export class AurDialogModule { }
