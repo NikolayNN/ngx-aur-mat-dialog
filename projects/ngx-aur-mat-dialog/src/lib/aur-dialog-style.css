@@ -9,3 +9,9 @@
 .aur-dialog-content .mat-stepper-horizontal {
   height: 100%;
 }
+
+/* setup displaying action-buttons */
+.aur-dialog-action-buttons {
+  display: flex;
+  gap: 8px;
+}
