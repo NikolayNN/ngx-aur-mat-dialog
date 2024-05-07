@@ -1,0 +1,34 @@
+<aur-dialog title="Scrolable list">
+
+  <ng-container aurDialogStickyHeader>
+    <mat-checkbox (change)="toggleAllSelections($event.checked)">
+      Select All
+    </mat-checkbox>
+  </ng-container>
+
+  <ng-container aurDialogContent>
+    <mat-selection-list #list [multiple]="true">
+      <mat-list-option [value]="1">value 1</mat-list-option>
+      <mat-list-option [value]="2">value 2</mat-list-option>
+      <mat-list-option [value]="3">value 3</mat-list-option>
+      <mat-list-option [value]="4">value 4</mat-list-option>
+      <mat-list-option [value]="5">value 5</mat-list-option>
+      <mat-list-option [value]="6">value 6</mat-list-option>
+      <mat-list-option [value]="7">value 7</mat-list-option>
+      <mat-list-option [value]="8">value 8</mat-list-option>
+      <mat-list-option [value]="9">value 9</mat-list-option>
+      <mat-list-option [value]="10">value 10</mat-list-option>
+      <mat-list-option [value]="11">value 11</mat-list-option>
+      <mat-list-option [value]="12">value 12</mat-list-option>
+      <mat-list-option [value]="13">value 13</mat-list-option>
+      <mat-list-option [value]="14">value 14</mat-list-option>
+      <mat-list-option [value]="15">value 15</mat-list-option>
+    </mat-selection-list>
+  </ng-container>
+
+  <ng-container aurDialogActions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button mat-dialog-close>Install</button>
+  </ng-container>
+
+</aur-dialog>
