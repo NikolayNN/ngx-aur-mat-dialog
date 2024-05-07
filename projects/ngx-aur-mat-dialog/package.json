@@ -1,6 +1,6 @@
 {
   "name": "ngx-aur-mat-dialog",
-  "version": "17.1.4",
+  "version": "17.1.5",
   "peerDependencies": {
     "@angular/animations": "^17.3.3",
     "@angular/common": "^17.3.3",
@@ -13,5 +13,10 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "exports": {
+    "./styles/aur-dialog-style.css": {
+      "default": "./styles/aur-dialog-style.css"
+    }
   }
 }
