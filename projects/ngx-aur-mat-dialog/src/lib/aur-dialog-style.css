@@ -22,6 +22,7 @@
 
   .mat-horizontal-content-container {
     overflow: hidden !important;
+    flex-grow: 1;
     padding: 0;
   }
 
@@ -36,8 +37,8 @@
     flex-grow: 1;
     overflow: auto;
   }
-}
 
-.center {
-  justify-content: center;
+  .aur-dialog-action-buttons {
+    justify-content: center;
+  }
 }

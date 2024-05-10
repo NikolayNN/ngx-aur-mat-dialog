@@ -5,7 +5,9 @@
       <mat-step>
         <ng-template matStepLabel> Step 1</ng-template>
         <div class="aur-dialog-stepper-content">
-          <p>Step 1 content here</p>
+          <p>Иногда предыдущий подход основанный на том чтобы показывать кнопки через switch в контенере помеченном
+            aurActionButtons не срабатывает, можно сделать так указав классы
+            aur-dialog-inner-actions, aur-dialog-stepper-content, aur-dialog-action-buttons </p>
           <p>Step 1 content here</p>
           <p>Step 1 content here</p>
           <p>Step 1 content here</p>
@@ -40,7 +42,7 @@
           <p>Step 1 content here</p>
         </div>
 
-        <div class="aur-dialog-action-buttons center">
+        <div class="aur-dialog-action-buttons">
           <button color="primary" mat-flat-button (click)="stepper.next()">Next</button>
         </div>
 
@@ -48,9 +50,11 @@
 
       <mat-step>
         <ng-template matStepLabel> Step 2</ng-template>
-        <p>Step 2 content here</p>
+        <div class="aur-dialog-stepper-content">
+          <p>Step 2 content here</p>
+        </div>
 
-        <div>
+        <div class="aur-dialog-action-buttons">
           <button mat-button (click)="stepper.previous()">Back</button>
           <button mat-button (click)="stepper.next()">Next</button>
         </div>
@@ -58,9 +62,12 @@
 
       <mat-step>
         <ng-template matStepLabel> Step 3</ng-template>
-        <p>Step 3 content here</p>
 
-        <div>
+        <div class="aur-dialog-stepper-content">
+          <p>Step 3 content here</p>
+        </div>
+
+        <div class="aur-dialog-action-buttons">
           <button mat-button (click)="stepper.previous()">Back</button>
           <button mat-button mat-dialog-close>Close</button>
         </div>
