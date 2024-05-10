@@ -7,6 +7,7 @@ import {StepperDialogComponent} from "./stepper-dialog/stepper-dialog.component"
 import {
   ScrolableListWithStickyHeaderComponent
 } from "./scrolable-list-with-sticky-header/scrolable-list-with-sticky-header.component";
+import {StepperDialogClassComponent} from "./stepper-dialog-class/stepper-dialog-class.component";
 
 @Component({
   selector: 'app-root',
@@ -51,6 +52,13 @@ export class AppComponent {
   openListDialog() {
     this.dialog.open(ScrolableListWithStickyHeaderComponent, {
       height: '400px',
+      width: '600px'
+    });
+  }
+
+  openStepperDialogClass() {
+    this.dialog.open(StepperDialogClassComponent, {
+      height: '600px',
       width: '600px'
     });
   }

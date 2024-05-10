@@ -1,0 +1,72 @@
+<aur-dialog [showActions]="false">
+
+  <ng-container aurDialogContent>
+    <mat-stepper linear #stepper class="aur-dialog-inner-actions">
+      <mat-step>
+        <ng-template matStepLabel> Step 1</ng-template>
+        <div class="aur-dialog-stepper-content">
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+          <p>Step 1 content here</p>
+        </div>
+
+        <div class="aur-dialog-action-buttons center">
+          <button color="primary" mat-flat-button (click)="stepper.next()">Next</button>
+        </div>
+
+      </mat-step>
+
+      <mat-step>
+        <ng-template matStepLabel> Step 2</ng-template>
+        <p>Step 2 content here</p>
+
+        <div>
+          <button mat-button (click)="stepper.previous()">Back</button>
+          <button mat-button (click)="stepper.next()">Next</button>
+        </div>
+      </mat-step>
+
+      <mat-step>
+        <ng-template matStepLabel> Step 3</ng-template>
+        <p>Step 3 content here</p>
+
+        <div>
+          <button mat-button (click)="stepper.previous()">Back</button>
+          <button mat-button mat-dialog-close>Close</button>
+        </div>
+      </mat-step>
+
+    </mat-stepper>
+  </ng-container>
+
+</aur-dialog>
