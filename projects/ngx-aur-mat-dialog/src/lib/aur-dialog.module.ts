@@ -12,6 +12,7 @@ import {AurDialogActionsDirective} from "./aur-dialog-actions.directive";
 import {MatStepperModule} from "@angular/material/stepper";
 import {AurDialogStickyFooterDirective} from "./aur-dialog-sticky-footer.directive";
 import {AurDialogStickyHeaderDirective} from "./aur-dialog-sticky-header.directive";
+import {AurDialogTitleDirective} from "./aur-dialog-title.directive";
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {AurDialogStickyHeaderDirective} from "./aur-dialog-sticky-header.directi
     MatIcon,
     MatProgressSpinner,
     NgIf,
+    AurDialogTitleDirective,
     AurDialogContentDirective,
     AurDialogActionsDirective,
     AurDialogStickyFooterDirective,
