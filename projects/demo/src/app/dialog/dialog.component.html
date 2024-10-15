@@ -1,11 +1,12 @@
 <aur-dialog
+  [title]="title"
   [showSpinner]="showDialogActions"
   [closeIcon]="closeIcon"
   [closeTooltip]="closeTooltip"
   [closeTooltipShowDelay]="closeTooltipShowDelay">
 
   <ng-container aurDialogTitle>
-    <div>{{ title }}</div>
+    <ng-content select="[appDialogTitle]"></ng-content>
   </ng-container>
 
   <ng-container aurDialogContent>

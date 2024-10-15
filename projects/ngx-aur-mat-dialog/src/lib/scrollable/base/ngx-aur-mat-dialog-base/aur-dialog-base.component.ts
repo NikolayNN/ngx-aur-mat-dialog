@@ -1,9 +1,10 @@
-import {Component, ContentChild, ElementRef, Input} from '@angular/core';
+import {AfterContentInit, Component, ContentChild, ElementRef, Input} from '@angular/core';
+import {AurDialogTitleDirective} from "ngx-aur-mat-dialog";
 
 @Component({
   template: ''
 })
-export class AurDialogBaseComponent {
+export class AurDialogBaseComponent implements AfterContentInit {
   @Input() title = 'Example Title'
   @Input() closeIcon = 'close';
   @Input() closeIconClass: string | undefined;
@@ -15,7 +16,7 @@ export class AurDialogBaseComponent {
   @Input() showActions = true;
   @Input() alignActions: 'start' | 'center' | 'end' = 'center'
 
-  @ContentChild('[aurDialogTitle]', { read: ElementRef }) aurDialogTitleContent?: ElementRef;
+  @ContentChild(AurDialogTitleDirective) aurDialogTitleContent?: AurDialogTitleDirective;
   hasAurDialogTitle = false;
 
   ngAfterContentInit() {
