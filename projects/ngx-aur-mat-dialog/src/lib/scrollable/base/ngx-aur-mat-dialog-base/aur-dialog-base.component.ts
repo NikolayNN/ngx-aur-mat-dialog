@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, ContentChild, ElementRef, Input} from '@angular/core';
 
 @Component({
   template: ''
@@ -14,4 +14,11 @@ export class AurDialogBaseComponent {
 
   @Input() showActions = true;
   @Input() alignActions: 'start' | 'center' | 'end' = 'center'
+
+  @ContentChild('[aurDialogTitle]', { read: ElementRef }) aurDialogTitleContent?: ElementRef;
+  hasAurDialogTitle = false;
+
+  ngAfterContentInit() {
+    this.hasAurDialogTitle = !!this.aurDialogTitleContent;
+  }
 }

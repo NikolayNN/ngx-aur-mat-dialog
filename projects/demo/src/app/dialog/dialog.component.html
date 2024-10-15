@@ -1,8 +1,13 @@
-<aur-dialog [title]="title"
-                    [showSpinner]="showDialogActions"
-                    [closeIcon]="closeIcon"
-                    [closeTooltip]="closeTooltip"
-                    [closeTooltipShowDelay]="closeTooltipShowDelay">
+<aur-dialog
+  [showSpinner]="showDialogActions"
+  [closeIcon]="closeIcon"
+  [closeTooltip]="closeTooltip"
+  [closeTooltipShowDelay]="closeTooltipShowDelay">
+
+  <ng-container aurDialogTitle>
+    <div>{{ title }}</div>
+  </ng-container>
+
   <ng-container aurDialogContent>
     <ng-content select="[appDialogContent]"></ng-content>
   </ng-container>
