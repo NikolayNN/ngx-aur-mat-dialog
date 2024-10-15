@@ -14,13 +14,15 @@
 }
 
 <div mat-dialog-title class="title">
-  <ng-container *ngIf="hasAurDialogTitle; else defaultTitle">
-    <ng-content select="[aurDialogTitle]"></ng-content>
-  </ng-container>
-  <ng-template #defaultTitle>
-    {{ title }}
-  </ng-template>
+  <div>
+    @if (aurDialogTitleContent) {
+      <ng-content select="[aurDialogTitle]"></ng-content>
+    } @else {
+        {{ title }}
+    }
+  </div>
 </div>
+
 
 <mat-dialog-content class="aur-dialog-content mat-typography">
 
