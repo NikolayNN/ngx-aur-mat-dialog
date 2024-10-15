@@ -36,6 +36,11 @@ import {AurDialogTitleDirective} from "./aur-dialog-title.directive";
   ],
   exports: [
     AurDialogComponent,
+    AurDialogTitleDirective,
+    AurDialogContentDirective,
+    AurDialogActionsDirective,
+    AurDialogStickyFooterDirective,
+    AurDialogStickyHeaderDirective,
   ],
   providers: [
     {
