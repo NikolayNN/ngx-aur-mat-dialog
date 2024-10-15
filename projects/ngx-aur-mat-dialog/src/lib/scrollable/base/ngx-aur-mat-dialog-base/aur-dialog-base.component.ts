@@ -1,5 +1,6 @@
 import {AfterContentInit, Component, ContentChild, ElementRef, Input} from '@angular/core';
-import {AurDialogTitleDirective} from "ngx-aur-mat-dialog";
+import { AurDialogTitleDirective } from '../../../aur-dialog-title.directive';
+
 
 @Component({
   template: ''
