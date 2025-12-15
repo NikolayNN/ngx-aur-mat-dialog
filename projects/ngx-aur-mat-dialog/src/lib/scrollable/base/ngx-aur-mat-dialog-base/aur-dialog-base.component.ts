@@ -1,9 +1,10 @@
-import {AfterContentInit, Component, ContentChild, ElementRef, Input} from '@angular/core';
-import { AurDialogTitleDirective } from '../../../aur-dialog-title.directive';
+import {AfterContentInit, Component, ContentChild, Input} from '@angular/core';
+import { AurDialogTitleDirective } from 'ngx-aur-mat-dialog';
 
 
 @Component({
-  template: ''
+  template: '',
+  standalone: false
 })
 export class AurDialogBaseComponent implements AfterContentInit {
   @Input() title = 'Example Title'
