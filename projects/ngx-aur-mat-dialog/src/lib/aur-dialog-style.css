@@ -27,12 +27,10 @@
   }
 
   .mat-horizontal-stepper-content {
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
-  }
-  .mat-horizontal-stepper-content.mat-horizontal-stepper-content-current {
-    height: 100%;
   }
 
   .aur-dialog-stepper-content {
