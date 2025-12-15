@@ -1,6 +1,5 @@
-import {Component, ContentChild, Input} from '@angular/core';
-import {AurDialogActionsDirective, AurDialogModule, AurDialogTitleDirective} from "ngx-aur-mat-dialog";
-import {DialogTitleDirective} from "./dialog-title.directive";
+import {Component, Input} from '@angular/core';
+import {AurDialogActionsDirective, AurDialogModule} from "ngx-aur-mat-dialog";
 
 @Component({
   selector: 'app-dialog',

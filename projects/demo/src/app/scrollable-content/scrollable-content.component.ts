@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 import {MatDialogClose} from "@angular/material/dialog";
-import {AurDialogActionsDirective, AurDialogContentDirective, AurDialogModule} from "ngx-aur-mat-dialog";
-import {DialogComponent} from "../dialog/dialog.component";
-import {DialogActionsDirective} from "../dialog/dialog-actions.directive";
 import {
+  AurDialogActionsDirective,
+  AurDialogContentDirective,
+  AurDialogModule,
+  AurDialogStickyFooterDirective,
   AurDialogStickyHeaderDirective
-} from "../../../../ngx-aur-mat-dialog/src/lib/aur-dialog-sticky-header.directive";
-import {
-  AurDialogStickyFooterDirective
-} from "../../../../ngx-aur-mat-dialog/src/lib/aur-dialog-sticky-footer.directive";
+} from "ngx-aur-mat-dialog";
 
 @Component({
   selector: 'app-scrollable-content',
@@ -22,8 +20,6 @@ import {
     AurDialogActionsDirective,
     AurDialogContentDirective,
     AurDialogModule,
-    DialogComponent,
-    DialogActionsDirective
   ],
   templateUrl: './scrollable-content.component.html',
   styleUrl: './scrollable-content.component.scss'
